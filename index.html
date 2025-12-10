@@ -29,26 +29,26 @@
        
       </div>
       <div class="main3">
-        <button class="acdelete" data-key="AC">AC</button>
-        <button class="calculation" data-key="%">%</button>
-        <button class="calculation" data-key="CC"><i class="fa-solid fa-delete-left"></i></button>
-        <button class="calculation" data-key="/">/</button>
-        <button class="numbers" data-key="7">7</button>
-        <button class="numbers" data-key="8">8</button>
-        <button class="numbers" data-key="9">9</button>
-        <button class="calculation" data-key="*">×</button>
-        <button class="numbers" data-key="4">4</button>
-        <button class="numbers" data-key="5">5</button>
-        <button class="numbers" data-key="6">6</button>
-        <button class="calculation" data-key="-">-</button>
-        <button class="numbers" data-key="1">1</button>
-        <button class="numbers" data-key="2">2</button>
-        <button class="numbers" data-key="3">3</button>
-        <button class="calculation" data-key="+">+</button>
-        <button class="numbers" data-key="00">00</button>
-        <button class="numbers" data-key="0">0</button>
-        <button class="numbers" data-key="." >.</button>
-        <button class="result calculation" data-key="=">=</button>
+        <button class="acdelete" data-key="AC" onclick="clearDisplay()">AC</button>
+        <button class="calculation" data-key="%" onclick="appendToDisplay('%')">%</button>
+        <button class="calculation" data-key="CC" onclick="clearDisplay()"><i class="fa-solid fa-delete-left"></i></button>
+        <button class="calculation" data-key="/" onclick="appendToDisplay('/')">/</button>
+        <button class="numbers" data-key="7" onclick="appendToDisplay('7')">7</button>
+        <button class="numbers" data-key="8" onclick="appendToDisplay('8')">8</button>
+        <button class="numbers" data-key="9" onclick="appendToDisplay('9')">9</button>
+        <button class="calculation" data-key="*" onclick="appendToDisplay('*')">×</button>
+        <button class="numbers" data-key="4" onclick="appendToDisplay('4')">4</button>
+        <button class="numbers" data-key="5" onclick="appendToDisplay('5')">5</button>
+        <button class="numbers" data-key="6" onclick="appendToDisplay('6')">6</button>
+        <button class="calculation" data-key="-" onclick="appendToDisplay('-')">-</button>
+        <button class="numbers" data-key="1" onclick="appendToDisplay('1')">1</button>
+        <button class="numbers" data-key="2" onclick="appendToDisplay('2')">2</button>
+        <button class="numbers" data-key="3" onclick="appendToDisplay('3')">3</button>
+        <button class="calculation" data-key="+" onclick="appendToDisplay('+')">+</button>
+        <button class="numbers" data-key="00" onclick="appendToDisplay('00')">00</button>
+        <button class="numbers" data-key="0" onclick="appendToDisplay('0')">0</button>
+        <button class="numbers" data-key="." onclick="appendToDisplay('.')" >.</button>
+        <button class="result calculation" data-key="=" onclick="calculate()">=</button>
 
        </div>
      
