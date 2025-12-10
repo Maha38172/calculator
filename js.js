@@ -89,8 +89,8 @@ result.addEventListener("click",function(){
 })
 */
 
-function appendToDisplay(input){
-    input.value+=input
+function appendToDisplay(display){
+    input.value+=display 
 }
 function clearDisplay(){
     input.value=""
